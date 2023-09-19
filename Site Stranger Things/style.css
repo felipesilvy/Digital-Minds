@@ -1,0 +1,408 @@
+.nav-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li a {
+  display: block;
+  color: #ed2b12;
+  padding: 8px;
+  text-decoration: none;
+}
+
+.hovermenu {
+  display: none;
+}
+
+.hovermenu:hover {
+  color: white;
+  text-decoration: underline white;
+}
+
+.navegacao {
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: #000;
+}
+
+body {
+  background: #000000;
+}
+
+.st {
+  width: 625px;
+  margin: 6rem auto 3rem auto;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 8rem;
+  font-family: "ITC Benguiat W01";
+  font-weight: 800;
+  color: #1c0502;
+  text-shadow: -0.05rem -0.05rem 1px #ed2b12, 0.05rem -0.05rem 1px #ed2b12,
+    -0.05rem 0.05rem 1px #ed2b12, 0.05rem 0.05rem 1px #ed2b12, 0 0 15px #630100,
+    0 0 20px #450100;
+  letter-spacing: -2px;
+}
+
+.st p {
+  display: inline-block;
+  margin: 0;
+}
+
+.st-bound {
+  box-shadow: -0.05rem -0.05rem 2px #ed2b12, 0.05rem -0.05rem 2px #ed2b12,
+    -0.05rem 0.05rem 2px #ed2b12, 0.05rem 0.05rem 2px #ed2b12;
+  height: 5px;
+}
+
+.st-bound-full {
+  width: 100%;
+  margin: auto;
+  margin-bottom: -1.2rem;
+  max-width: 612px;
+  margin-left: 5px;
+}
+
+.st-bound-mini {
+  margin-top: 0.5rem;
+}
+
+.st-bound-left {
+  float: left;
+  width: 99px;
+  position: relative;
+  left: 5px;
+}
+
+.st-bound-right {
+  float: right;
+  width: 103px;
+  left: 0.3rem;
+  position: relative;
+}
+
+.st-bottom {
+  clear: both;
+  top: -3.75rem;
+  position: relative;
+  left: 0.6rem;
+  letter-spacing: 2px;
+}
+
+.st-drop {
+  line-height: 0;
+  position: relative;
+  top: 1.55rem;
+}
+
+.st-stranger-s {
+  font-size: 10.5rem;
+  letter-spacing: -8px;
+}
+
+.st-stranger-t {
+  letter-spacing: 0;
+}
+
+.st-stranger-n {
+  letter-spacing: -5px;
+}
+
+.st-stranger-g {
+  letter-spacing: 0;
+}
+
+.st-stranger-r-2 {
+  font-size: 10.5rem;
+  right: 0.2rem;
+}
+
+.st-things-t {
+  font-size: 104%;
+  letter-spacing: 2px;
+}
+
+.st-things-n {
+  letter-spacing: -5px;
+}
+
+.st-things-g {
+  letter-spacing: -3px;
+}
+
+.botaomenu {
+  max-width: 45px;
+  max-height: 35px;
+  width: auto;
+  height: auto;
+  margin-top: 5px;
+}
+
+.botaomenu:hover {
+  transform: scale(1.4);
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.cards-container-história {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.cards-história {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 300px;
+  background-color: white;
+  margin: 10px;
+  cursor: pointer;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border-radius: 15px; /* Borda arredondada */
+  box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.2); /* Nova box-shadow */
+  opacity: 0.5;
+}
+
+/* Efeito de hover */
+.cards-história:hover {
+  transform: scale(1.05); /* Aumenta em 5% o tamanho no hover */
+  box-shadow: 3px 16px 20px rgba(255, 255, 255, 0.3); /* Nova box-shadow no hover */
+  opacity: 1;
+}
+
+.cards-história:nth-child(1) {
+  background-image: url("https://estantedadeda.com.br/wp-content/uploads/2021/06/Stranger-Things-Primeira-Temporada.jpg");
+  background-size: cover;
+}
+
+.cards-história:nth-child(2) {
+  background-image: url("https://i.pinimg.com/originals/9e/36/74/9e36748a38c77f161744bfb95a6de8f4.jpg");
+  background-size: cover;
+}
+
+.cards-história:nth-child(3) {
+  background-image: url("https://static1.purebreak.com.br/articles/3/90/13/3/@/344755--stranger-things-4-temporada-e-confir-amp_article_image-2.jpg");
+  background-size: cover;
+}
+
+.cards-história:nth-child(4) {
+  background-image: url("https://conteudo.imguol.com.br/c/entretenimento/58/2022/05/12/novo-poster-da-quarta-temporada-de-stranger-things-1652368177430_v2_615x300.jpg");
+  background-size: cover;
+}
+.numerocard {
+  text-decoration: none;
+  color: white;
+  font-size: 8em;
+}
+
+.text-conteiner-história,
+#curiosidades {
+  width: 60%;
+  padding: 5px;
+}
+
+.text-conteiner-história p,
+#curiosidades p {
+  color: white;
+  text-align: justify;
+}
+
+.text-conteiner-história h3,
+#curiosidades h3 {
+  color: white;
+}
+
+.text-conteiner-história ul,
+#curiosidades ul {
+  color: white;
+  text-align: justify;
+}
+
+#imagem-temp1 {
+  top: 550px;
+}
+
+#imagem2-temp1 {
+  top: 950px;
+}
+
+#imagem3-temp1 {
+  top: 1350px;
+}
+
+#imagem4 {
+  top: 1900px;
+}
+
+#imagem-curiosidades {
+  top: 250px;
+}
+
+#imagem2-curiosidades {
+  top: 600px;
+}
+
+#imagem3-curiosidades {
+  top: 1050px;
+}
+
+#imagem-temp1,
+#imagem2-temp1,
+#imagem3-temp1,
+#imagem4,
+#imagem-curiosidades,
+#imagem2-curiosidades,
+#imagem3-curiosidades {
+  position: absolute;
+  right: 45px;
+  max-width: 30%; /* Ajuste a largura máxima conforme necessário */
+  height: auto;
+  border: 8px solid red; /* Cor vermelha usada pela Netflix */
+  border-radius: 12px; /* Borda arredondada */
+  box-shadow: 10px 10px 20px rgba(255, 243, 243, 0.3); /* Sombra suave */
+  padding: 10px; /* Espaçamento interno para a imagem */
+}
+
+.botaonextpage {
+  border-radius: 10px;
+  padding: 10px;
+  color: black;
+}
+
+.botaonextpage:hover {
+  background-color: red;
+  transform: scale(1.1);
+  color: white;
+}
+
+#botaovoltar {
+  float: right;
+  margin-top: 5px;
+  margin-right: 40px;
+  border-radius: 10px;
+  padding: 10px;
+  color: black;
+}
+
+#botaovoltar:hover {
+  background-color: red;
+  transform: scale(1.1);
+  color: white;
+}
+
+#videotemp1,
+#videotemp2,
+#videotemp3,
+#videotemp4 {
+  margin: 20px;
+}
+
+.text-conteiner-história p {
+  margin-left: 20px;
+}
+
+h1 {
+  font-family: "Old Standard TT", serif;
+}
+
+h3 {
+  font-family: "Old Standard TT", serif;
+  margin: 20px;
+}
+
+.tabela {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tabela th,
+.tabela td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #000000;
+}
+
+.tabela th {
+  background-color: darkred;
+}
+
+.tabela tr:hover {
+  background-color: darkred;
+}
+
+/* PAGINA PRINCIPAL */
+
+.divDoBotao {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  justify-content: center;
+  font-size: 22px;
+  background: transparent;
+  border: none;
+  padding: 1em 1.5em;
+  color: #ffedd3;
+  text-transform: uppercase;
+  position: relative;
+  transition: 0.5s ease;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: darkred;
+  transition: 0.5s ease;
+}
+
+.btn:hover {
+  color: aliceblue;
+  transition-delay: 0.5s;
+}
+
+.btn:hover::before {
+  width: 100%;
+}
+
+.btn::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 0;
+  width: 100%;
+  background-color: darkred;
+  transition: 0.4s ease;
+  z-index: -1;
+}
+
+.btn:hover::after {
+  height: 100%;
+  transition-delay: 0.4s;
+  color: aliceblue;
+}
+
+.OqueÉ p,
+.Netflix p {
+  color: white;
+  margin: 20px;
+}

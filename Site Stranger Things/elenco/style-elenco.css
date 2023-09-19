@@ -1,0 +1,116 @@
+.cards-container-elenco {
+  display: flex;
+  flex-wrap: wrap; /* Quebra os cards em várias linhas */
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.cards-elenco {
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32vh;
+  height: 44vh;
+  background-color: rgb(238, 41, 41);
+  margin: 15px;
+  cursor: pointer;
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px; /* Borda arredondada */
+  opacity: 0.6;
+  box-shadow: 0 15px 25px rgba(185, 28, 28, 0.5);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.cards-elenco:hover {
+  opacity: 1;
+  transform: scale(1.05);
+  box-shadow: 0 25px 35px rgba(185, 28, 28, 0.6);
+}
+
+#card1 {
+  background-image: url("https://s2.glbimg.com/fnGo7Oq17_MnF-oVHU0g2Uc4cUI=/0x0:4912x3292/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_da025474c0c44edd99332dddb09cabe8/internal_photos/bs/2022/D/i/H6VqPYRImGdjkWRWSCLQ/99092122-british-actress-millie-bobby-brown-attends-stranger-things-season-4-premiere-at-netflix-bro.jpg");
+  background-size: cover;
+}
+
+#card2 {
+  background-image: url("https://portalpopline.com.br/wp-content/uploads/2022/07/Finn-Wolfhard.jpg");
+  background-size: cover;
+}
+
+#card3 {
+  background-image: url("https://observatoriog.bol.uol.com.br/wordpress/wp-content/uploads/2023/02/230106091630-noah-schnapp-file.jpg");
+  background-size: cover;
+}
+
+#card4 {
+  background-image: url("https://assetsio.reedpopcdn.com/Gaten-Matarazzo-zelda.jpg?width=1200&height=900&fit=crop&quality=100&format=png&enable=upscale&auto=webp");
+  background-size: cover;
+}
+
+#card5 {
+  background-image: url("https://images2.minutemediacdn.com/image/upload/c_fill,w_720,ar_16:9,f_auto,q_auto,g_auto/shape/cover/entertainment/Premiere-Of-Netflixs-Stranger-Things-Season-3---Ar-dc45fe4083b34321322d72fc62ed819e.jpg");
+  background-size: cover;
+}
+
+#card6 {
+  background-image: url("https://br.web.img3.acsta.net/c_310_420/pictures/17/10/27/11/59/5262567.jpg");
+  background-size: cover;
+}
+
+#card7 {
+  background-image: url("https://www.j-14.com/wp-content/uploads/2022/04/shutterstock_editorial_12940551rs.jpg?fit=3500%2C2391&quality=86&strip=all");
+  background-size: cover;
+}
+
+#card8 {
+  background-image: url("https://www.otempo.com.br/image/contentid/policy:1.2377075:1598457475/Nathalia-jpg.jpg?f=3x2&w=1224");
+  background-size: cover;
+}
+
+#card9 {
+  background-image: url("https://i0.wp.com/manforhimself.com/wp-content/uploads/2022/08/16.png?fit=1200%2C1200&ssl=1?v=1661959171");
+  background-size: cover;
+}
+
+#card10 {
+  background-image: url("https://meups.com.br/wp-content/uploads/2022/09/david-harbour.jpg");
+  background-size: cover;
+}
+
+#card11 {
+  background-image: url("https://uproxx.com/wp-content/uploads/2022/06/Winona-Ryder-Feat.jpeg?w=715");
+  background-size: cover;
+}
+
+#card12 {
+  background-image: url("https://br.web.img3.acsta.net/c_310_420/pictures/19/07/05/15/14/2975486.jpg");
+  background-size: cover;
+}
+
+#card13 {
+  background-image: url("https://www.indiewire.com/wp-content/uploads/2022/06/Maya-Hawke-1.jpg");
+  background-size: cover;
+}
+
+#card14 {
+  background-image: url("https://www.usmagazine.com/wp-content/uploads/2022/05/Joseph-Quinn-5-Things-Know-About-New-Stranger-Things-Actor-001.jpg?w=1600&quality=86&strip=all");
+  background-size: cover;
+}
+
+#card15 {
+  background-image: url("https://www.coliseugeek.com.br/wp-content/uploads/2023/01/3.jpeg");
+  background-size: cover;
+}
+
+.cards-elenco p {
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  padding: 8px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 250px;
+  font-family: "Arvo", serif;
+}
