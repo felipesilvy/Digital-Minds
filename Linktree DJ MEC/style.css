@@ -1,0 +1,194 @@
+body {
+  background: rgb(255, 201, 36);
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(255, 201, 36, 1) 1%,
+    rgba(255, 219, 105, 1) 33%,
+    rgba(255, 219, 108, 1) 50%,
+    rgba(255, 219, 105, 1) 67%,
+    rgba(255, 201, 36, 1) 99%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(255, 201, 36, 1) 1%,
+    rgba(255, 219, 105, 1) 33%,
+    rgba(255, 219, 108, 1) 50%,
+    rgba(255, 219, 105, 1) 67%,
+    rgba(255, 201, 36, 1) 99%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(255, 201, 36, 1) 1%,
+    rgba(255, 219, 105, 1) 33%,
+    rgba(255, 219, 108, 1) 50%,
+    rgba(255, 219, 105, 1) 67%,
+    rgba(255, 201, 36, 1) 99%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffc924",endColorstr="#ffc924",GradientType=1);
+}
+
+a {
+  cursor: default;
+}
+
+button {
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+
+.btn {
+  border-radius: 30px;
+  border: 2px solid #343a40;
+  font: 3vh bold;
+  width: 70%;
+  padding: 15px;
+}
+
+span {
+  font-weight: bold;
+  font-family: Calibri, sans-serif;
+}
+
+.container-fluid {
+  display: flex;
+  flex-direction: column;
+  padding: 0%;
+  justify-content: center;
+  text-align: center;
+}
+
+h3 {
+  color: #343a40; /* Define a cor do texto */
+  font-family: Calibri, sans-serif; /* Define a família da fonte */
+  /* Outros estilos desejados, como sublinhado, por exemplo */
+  font-weight: bold;
+  font-style: italic;
+}
+
+h5 {
+  color: #343a40;
+  font-family: Calibri, sans-serif;
+  font-weight: bold;
+}
+
+#logo {
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 525px) {
+  span {
+    font-size: 16px;
+    font-weight: bolder;
+    font-family: Calibri, sans-serif;
+  }
+}
+
+@media (max-width: 470px) and (min-width: 420px) {
+  span {
+    font-size: 14px;
+    font-weight: bolder;
+    font-family: Calibri, sans-serif;
+  }
+  h3 {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 419px) and (min-width: 365px) {
+  span {
+    font-size: 12px;
+    font-weight: bolder;
+    font-family: Calibri, sans-serif;
+  }
+  h3 {
+    font-size: 23px;
+  }
+}
+
+@media (max-width: 364px) and (min-width: 315px) {
+  .btn {
+    border-radius: 30px;
+    border: 2px solid #343a40;
+    font: 3vh bold;
+    width: 80%;
+    padding: 12px;
+  }
+  span {
+    font-size: 12px;
+    font-weight: bolder;
+    font-family: Calibri, sans-serif;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  h5 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 314px) and (min-width: 290px) {
+  .btn {
+    border-radius: 30px;
+    border: 2px solid #343a40;
+    font: 3vh bold;
+    width: 80%;
+    padding: 10px;
+  }
+  span {
+    font-size: 11px;
+    font-weight: bolder;
+    font-family: Calibri, sans-serif;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  h5 {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 289px) and (min-width: 240px) {
+  .btn {
+    border-radius: 30px;
+    border: 2px solid #343a40;
+    font: 3vh bold;
+    width: 90%;
+    padding: 10px;
+  }
+  span {
+    font-size: 10px;
+    font-weight: bolder;
+    font-family: Calibri, sans-serif;
+  }
+  h3 {
+    font-size: 15px;
+  }
+  h5 {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 239px) {
+  .btn {
+    border-radius: 30px;
+    border: 2px solid #343a40;
+    font: 3vh bold;
+    width: 90%;
+    padding: 10px;
+  }
+  span {
+    font-size: 10px;
+    font-weight: bolder;
+    font-family: Calibri, sans-serif;
+  }
+  h3 {
+    font-size: 14px;
+  }
+  h5 {
+    font-size: 13px;
+  }
+}
