@@ -68,3 +68,32 @@ window.onload = function () {
     window.open("https://www.djmec.com.br/");
   };
 };
+
+const whatsappBtn = document.querySelector(".whatsapp-button");
+const twitterBtn = document.querySelector(".twitter-button");
+const facebookBtn = document.querySelector(".facebook-button");
+const instagramBtn = document.querySelector(".instagram-button");
+
+// URL da sua página ou conteúdo a ser compartilhado
+const pageURL = encodeURIComponent(window.location.href);
+
+// Event listeners para os botões de compartilhamento
+whatsappBtn.addEventListener("click", () => {
+  const whatsappURL = `https://api.whatsapp.com/send?text=${pageURL}`;
+  window.open(whatsappURL, "_blank");
+});
+
+twitterBtn.addEventListener("click", () => {
+  const twitterURL = `https://twitter.com/intent/tweet?url=${pageURL}`;
+  window.open(twitterURL, "_blank");
+});
+
+facebookBtn.addEventListener("click", () => {
+  const facebookURL = `https://www.facebook.com/sharer/sharer.php?u=${pageURL}`;
+  window.open(facebookURL, "_blank");
+});
+
+instagramBtn.addEventListener("click", () => {
+  const instagramURL = `https://www.instagram.com/share?url=${pageURL}`;
+  window.open(instagramURL, "_blank");
+});
