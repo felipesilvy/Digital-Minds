@@ -1,0 +1,617 @@
+/* Reset de estilos */
+body,
+h1,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+input[type="text"] {
+  padding: 8px;
+  margin-right: 10px;
+  width: 300px;
+}
+
+input[type="number"] {
+  padding: 8px;
+  width: 70px;
+  margin-right: 10px;
+}
+
+#Adicionar {
+  margin-right: 10px;
+  padding: 8px 12px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+#Adicionar:hover,
+.comprado:hover {
+  background-color: #398a3d;
+}
+
+#ApagarTudo {
+  margin-right: 10px;
+  padding: 8px 12px;
+  background-color: #ad4646;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+#ApagarTudo:hover,
+.excluir:hover {
+  background-color: rgb(143, 58, 55);
+}
+
+#extrato {
+  margin-right: 10px;
+  padding: 8px 12px;
+  background-color: #0077cc;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+#extrato:hover,
+.alterar:hover {
+  background-color: #0061a7;
+}
+
+main {
+  margin: 20px;
+  flex: 1;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  background-color: #f7f7f7;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Adiciona espaço entre os itens */
+  width: 100%; /* Garante que os itens ocupem toda a largura */
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+}
+
+.quantidade,
+.excluir,
+.alterar,
+.comprado {
+  color: #fff;
+  border: none;
+  margin-right: 12px; /* Ajuste o espaçamento entre o botão "1x" e o texto "Alface" */
+  padding: 6px 8px;
+  cursor: pointer;
+}
+
+.buttonContainer {
+  display: flex;
+  gap: 10px;
+  margin-left: auto; /* Move para o canto direito */
+}
+
+.excluir,
+.alterar {
+  margin-left: 0px; /* Move os botões para a margem direita */
+  margin-right: 12px;
+}
+
+.quantidade {
+  background-color: #333;
+}
+
+.excluir {
+  background-color: #ad4646;
+}
+
+.alterar {
+  background-color: #0077cc;
+}
+
+.comprado {
+  background-color: #4caf50;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.description {
+  text-align: left;
+}
+
+p {
+  font-size: 16px;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.social-media {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: right;
+}
+
+.social-media img {
+  border-radius: 10px;
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 320px) {
+  li {
+    background-color: #f7f7f7;
+    padding: 10px;
+    margin-bottom: 6px;
+    border-radius: 5px;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; /* Altera a direção dos itens para vertical */
+    align-items: flex-start;
+    justify-content: space-between; /* Adiciona espaço entre os itens */
+    width: 95%; /* Garante que os itens ocupem toda a largura */
+  }
+
+  .excluir,
+  .alterar,
+  .comprado {
+    font-size: 10px;
+    padding: 3px 5px;
+    margin-right: 6px;
+  }
+
+  .quantidade {
+    font-size: 10px;
+    padding: 4px 6px;
+    margin-right: 6px;
+  }
+
+  span {
+    font-size: 13px;
+  }
+
+  .list-item {
+    margin-left: 4px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Cria três colunas */
+    grid-template-rows: repeat(2, 1fr); /* Cria duas linhas */
+    gap: 10px; /* Adiciona um espaço de 10px entre os itens */
+  }
+
+  /* Estilos específicos para cada elemento dentro de .list-item */
+  .list-item > :first-child {
+    /* Primeiro elemento ocupa a primeira linha e a primeira coluna */
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+  }
+
+  .list-item > :nth-child(2) {
+    /* Segundo elemento ocupa a primeira coluna da segunda linha */
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+  }
+
+  .list-item > :nth-child(3) {
+    /* Terceiro elemento ocupa a segunda coluna da segunda linha */
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+  }
+
+  .list-item > :last-child {
+    /* Último elemento (span) ocupa a segunda e terceira coluna da primeira linha */
+    grid-column: 2 / span 2;
+    grid-row: 1 / span 1;
+  }
+
+  .buttonContainer {
+    margin-top: 6px;
+    margin-left: 4px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Cria duas colunas */
+    gap: 10px; /* Adiciona um espaço de 10px entre os itens */
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  #Adicionar,
+  #ApagarTudo,
+  #extrato {
+    margin-right: 6px;
+    padding: 6px 10px;
+    margin-top: 6px;
+    font-size: 12px;
+  }
+
+  footer {
+    padding: 6px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  .description {
+    text-align: center;
+  }
+
+  .social-media img {
+    border-radius: 5px;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media screen and (max-width: 375px) and (min-width: 321px) {
+  li {
+    background-color: #f7f7f7;
+    padding: 10px;
+    margin-bottom: 6px;
+    border-radius: 5px;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; /* Altera a direção dos itens para vertical */
+    align-items: flex-start;
+    justify-content: space-between; /* Adiciona espaço entre os itens */
+    width: 98%; /* Garante que os itens ocupem toda a largura */
+  }
+
+  .excluir,
+  .alterar,
+  .comprado {
+    font-size: 11px;
+    padding: 3px 5px;
+    margin-right: 6px;
+  }
+
+  .quantidade {
+    font-size: 11px;
+    padding: 5px 7px;
+    margin-right: 6px;
+  }
+
+  span {
+    font-size: 14px;
+  }
+
+  .list-item {
+    margin-left: 4px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Cria três colunas */
+    grid-template-rows: repeat(2, 1fr); /* Cria duas linhas */
+    gap: 10px; /* Adiciona um espaço de 10px entre os itens */
+  }
+
+  /* Estilos específicos para cada elemento dentro de .list-item */
+  .list-item > :first-child {
+    /* Primeiro elemento ocupa a primeira linha e a primeira coluna */
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+  }
+
+  .list-item > :nth-child(2) {
+    /* Segundo elemento ocupa a primeira coluna da segunda linha */
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+  }
+
+  .list-item > :nth-child(3) {
+    /* Terceiro elemento ocupa a segunda coluna da segunda linha */
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+  }
+
+  .list-item > :last-child {
+    /* Último elemento (span) ocupa a segunda e terceira coluna da primeira linha */
+    grid-column: 2 / span 2;
+    grid-row: 1 / span 1;
+  }
+
+  .buttonContainer {
+    margin-top: 6px;
+    margin-left: 4px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Cria duas colunas */
+    gap: 10px; /* Adiciona um espaço de 10px entre os itens */
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  #Adicionar,
+  #ApagarTudo,
+  #extrato {
+    margin-right: 6px;
+    padding: 6px 10px;
+    margin-top: 6px;
+    font-size: 12px;
+  }
+
+  footer {
+    padding: 6px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  .description {
+    text-align: center;
+  }
+
+  .social-media img {
+    border-radius: 5px;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media screen and (max-width: 425px) and (min-width: 376px) {
+  li {
+    background-color: #f7f7f7;
+    padding: 10px;
+    margin-bottom: 6px;
+    border-radius: 5px;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; /* Altera a direção dos itens para vertical */
+    align-items: flex-start;
+    justify-content: space-between; /* Adiciona espaço entre os itens */
+    width: 95%; /* Garante que os itens ocupem toda a largura */
+  }
+
+  .excluir,
+  .alterar,
+  .comprado {
+    font-size: 12px;
+    padding: 3px 5px;
+    margin-right: 6px;
+  }
+
+  .quantidade {
+    font-size: 12px;
+    padding: 6px 8px;
+    margin-right: 6px;
+  }
+
+  span {
+    font-size: 15px;
+  }
+
+  .list-item {
+    margin-left: 4px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Cria três colunas */
+    grid-template-rows: repeat(2, 1fr); /* Cria duas linhas */
+    gap: 10px; /* Adiciona um espaço de 10px entre os itens */
+  }
+
+  /* Estilos específicos para cada elemento dentro de .list-item */
+  .list-item > :first-child {
+    /* Primeiro elemento ocupa a primeira linha e a primeira coluna */
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+  }
+
+  .list-item > :nth-child(2) {
+    /* Segundo elemento ocupa a primeira coluna da segunda linha */
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+  }
+
+  .list-item > :nth-child(3) {
+    /* Terceiro elemento ocupa a segunda coluna da segunda linha */
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+  }
+
+  .list-item > :last-child {
+    /* Último elemento (span) ocupa a segunda e terceira coluna da primeira linha */
+    grid-column: 2 / span 2;
+    grid-row: 1 / span 1;
+  }
+
+  .buttonContainer {
+    margin-top: 6px;
+    margin-left: 4px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Cria duas colunas */
+    gap: 10px; /* Adiciona um espaço de 10px entre os itens */
+  }
+
+  h1 {
+    font-size: 23px;
+  }
+
+  h3 {
+    font-size: 17px;
+  }
+
+  #Adicionar,
+  #ApagarTudo,
+  #extrato {
+    margin-right: 6px;
+    padding: 6px 10px;
+    margin-top: 6px;
+    font-size: 13px;
+  }
+
+  footer {
+    padding: 6px;
+  }
+
+  p {
+    font-size: 13px;
+  }
+
+  .description {
+    text-align: center;
+  }
+
+  .social-media img {
+    border-radius: 7px;
+    width: 25px;
+    height: 25px;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 426px) {
+  li {
+    background-color: #f7f7f7;
+    padding: 10px;
+    margin-bottom: 6px;
+    border-radius: 5px;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; /* Altera a direção dos itens para vertical */
+    align-items: flex-start;
+    justify-content: space-between; /* Adiciona espaço entre os itens */
+    width: 95%; /* Garante que os itens ocupem toda a largura */
+  }
+
+  .excluir,
+  .alterar,
+  .comprado {
+    font-size: 13px;
+    padding: 3px 5px;
+    margin-right: 6px;
+  }
+
+  .quantidade {
+    font-size: 13px;
+    padding: 6px 8px;
+    margin-right: 6px;
+  }
+
+  span {
+    font-size: 16px;
+  }
+
+  .list-item {
+    margin-left: 4px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Cria três colunas */
+    grid-template-rows: repeat(2, 1fr); /* Cria duas linhas */
+    gap: 10px; /* Adiciona um espaço de 10px entre os itens */
+  }
+
+  /* Estilos específicos para cada elemento dentro de .list-item */
+  .list-item > :first-child {
+    /* Primeiro elemento ocupa a primeira linha e a primeira coluna */
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+  }
+
+  .list-item > :nth-child(2) {
+    /* Segundo elemento ocupa a primeira coluna da segunda linha */
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+  }
+
+  .list-item > :nth-child(3) {
+    /* Terceiro elemento ocupa a segunda coluna da segunda linha */
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+  }
+
+  .list-item > :last-child {
+    /* Último elemento (span) ocupa a segunda e terceira coluna da primeira linha */
+    grid-column: 2 / span 2;
+    grid-row: 1 / span 1;
+  }
+
+  .buttonContainer {
+    margin-top: 6px;
+    margin-left: 4px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Cria duas colunas */
+    gap: 10px; /* Adiciona um espaço de 10px entre os itens */
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  #Adicionar,
+  #ApagarTudo,
+  #extrato {
+    margin-right: 6px;
+    padding: 6px 10px;
+    margin-top: 6px;
+    font-size: 14px;
+  }
+
+  footer {
+    padding: 6px;
+  }
+
+  p {
+    font-size: 13px;
+  }
+
+  .description {
+    text-align: center;
+  }
+
+  .social-media img {
+    border-radius: 7px;
+    width: 25px;
+    height: 25px;
+  }
+}
